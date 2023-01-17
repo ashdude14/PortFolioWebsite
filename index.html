@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Aashish Kumar Singh - Portfolio</title>
+    <link rel="stylesheet" href="./style.css"/>
+    <script src="./script.js"></script>
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav>
+      <div id="home">
+        <div class="profile_name">
+          Aashish Kumar Singh
+          <div class="contact_info">
+            <img src="html_finalprojimages/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          ashish.kumar.singh.jee@gmail.com
+        </div>
+        <div style="clear:both;"></div>
+        <div class="contact_info">
+          <img src="html_finalprojimages/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
+          +916201431674
+
+        </div>
+        </div>
+        <div class="topdiv">
+          <a class="topmenu" href="https://www.linkedin.com/in/aashish-kumar-singh-499241164/">About Me</a>
+          <!-- Add the links for Skills, Projects and Recommendation here -->
+          
+
+        </div>
+      </div>    
+    </nav>
+
+    <!-- About Me -->
+    <section id="about-me" class="container">
+      <div>
+        <img src="html_finalprojimages/developer.gif" class="profile_image"/>
+      </div>
+
+      <div>
+          <h1>
+            Hi, I'm Aashish Kumar Singh! <img src="html_finalprojimages/profilepic.jpg" width="60px"/>
+          </h1>
+          <p>
+            I am a full stack developer with  hands-on experience in both application and presentation layers,
+            having relevant skill for full stack development such as HTML, CSS, JavaScript, Node.Js, 
+            Express.Js, React.Js, MySql.
+            I have 1 year of experience in Cognizant as Programmer Analyst trainee.
+    
+          </p>
+      </div>
+    </section>
+              
+    <!-- Skills -->
+    <section id="skills">
+      <h2>Skills</h2>
+      <div style="clear:both;"></div>
+
+      <div class="all_skills">
+        <div class="skill">
+          <img src="html_finalprojimages/html5.png"/>
+          <h1>HTML</h1>
+          
+        </div>  
+
+        <div class="skill">
+          <img src="html_finalprojimages/js.jpeg"/>
+          <h1>JavaScript</h1>
+          
+        </div>  
+          <div class="skill">
+
+          <img src="html_finalprojimages/CSS3.png" /> 
+          <h1>CSS3</h1>
+          </div>
+        <!-- Add more skills here -->
+        <div class="skill">
+
+          <img src="html_finalprojimages/node.png" /> 
+          <h1>Node.Js</h1>
+          </div>
+          <div class="skill">
+
+            <img src="html_finalprojimages/react.png" /> 
+            <h1>REACT</h1>
+            </div>
+            <div class="skill">
+
+              <img src="html_finalprojimages/java.png" /> 
+              <h1>JAVA</h1>
+              </div> 
+
+      </div>
+    </section>
+          
+    <!-- Projects -->
+    <section class="projects" id="projects">
+      <h2>
+        Projects
+      </h2>
+      <div style="clear:both;"></div>
+
+        <div id="projects-container" class="projects-container">
+          <div class="project-card">
+            <h3>Single Page Portfolio Website</h3>
+            <ul>
+              <li>To enhance learning in HTML, CSS, JavaScript, Git, Linux, VSCode</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Book Review Application</h3>
+            <ul>
+              <li>A server-side online book review application and integrate it with a
+                secure REST API server which will use authentication at session
+                level using JWT. Tested application using Promises callbacks/Async-
+                Await functions. </li>
+                <li>Node.Js, Express. Js.</li>
+            </ul>
+          </div>
+          <hr>
+          <div class="project-card">
+            <h3>Student Query Portal</h3>
+            <ul>
+              <li>College semester project using VB.NET and SQL in Visual Studio
+                2017.</li>
+            </ul>
+          </div>
+          <div class="project-card">
+            <h3>Library Management Using C++</h3>
+            <ul>
+              <li>To enhance learning and apply concept of C++.</li>
+            </ul>
+          </div>
+    </div>
+    </section>
+    <div style="clear:both;"></div>
+
+    <!-- Recommendations -->
+    <section id="recommendations">
+      <h2>Recommendations</h2>
+      <div style="clear:both;"></div>
+      <div class="all_recommendations" id="all_recommendations">
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Jane is a very quick learner and quickly grasps key concepts of Web development. 
+          She got a great attitude & she is an excellent team player. 
+          She has a curious mind and asks the right question. 
+          She takes initiative within a team and has potentials to lead the team.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          Working with Jane has been an awesome experience. 
+          She is highly knowledgable and always goes the extra step to make sure everything is right. 
+          For any future projects that need her expertise I would definitely want to work with her again.
+          <span>&#8221;</span>
+        </div>
+        <div class="recommendation">
+          <span>&#8220;</span>
+          I had worked along with Jane during the initial phase of our venture which needed Web development. 
+          She is a committed resource who has in depth knowledge about the domain. 
+          She will be an asset for any organisation! 
+          <span>&#8221;</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- Recommendation Form -->
+    <section id="contact">
+      <div class="flex_center">
+        <fieldset>
+          <legend class="introduction">Leave a Recommendation</legend>          
+          <input type="text" placeholder="Name (Optional)"> <br/>
+          <textarea id="new_recommendation" cols="500" rows="10" placeholder="Message"></textarea>
+          <div class="flex_center">
+            <button id="recommend_btn" onclick="addRecommendation()">Submit</button>
+          </div>
+        </fieldset>
+      </div>
+    </section>
+
+    <div class="iconbutton">
+      <a href="#home">
+        <!--Add the code here for the logo to appear and the icon to be actionable-->
+      </a>
+    </div>
+
+    <div class="popup" id="popup" class="flex_center">
+      <img src="html_finalprojimages/checkmark--outline.svg"/>
+      <h3><!-- Add appropriate text here--></h3>
+      <button onclick="showPopup(false)">Ok</button>
+    </div>
+  </body>
+</html>
